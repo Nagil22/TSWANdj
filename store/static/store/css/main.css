@@ -14,6 +14,23 @@ body{
     margin: 0;
 }
 
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* home css */
 .section-padding{
     padding: 100px 0;
     padding-top: 15px;
@@ -44,6 +61,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
+    text-align: center;
 }
 
 .carousel-caption p{
@@ -64,20 +82,6 @@ body{
     z-index: 1;
 }
 
-.navbar-nav a{
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-
-}
-
-.navbar-light .navbar-brand{
-    color: black;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
 
 .services .card-body i{
     font-size: 25px;
@@ -88,11 +92,58 @@ body{
     
 }
 
+@media only screen and (min-width: 850px) {
+    .carousel-caption{
+        top: 150px;
+        bottom: 250px;
+
+    }
+
+    .carousel-caption p{
+        width: 100%;
+    }
+
+    .carousel-item img{
+        height: 100%;
+    }
+
+    .form-contact{
+        grid-template-columns: 1fr;
+    }
 
 
-.products .clearfix {
-    padding: 15px 15px;
 }
+
+@media only screen and (max-width: 850px) {
+    .navbar-nav{
+        text-align: center;
+        
+    }
+    .carousel-caption{
+        bottom: 300px;
+
+    }
+    .carousel-caption h5{
+        font-size: 3rem;
+
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    .carousel-item img{
+        height: 100%;
+    }
+   
+}
+
+/* home page ends */
 
 /* contact page css */
 .container-contact{
@@ -536,57 +587,6 @@ ul.breadcrumbs-custom-path li a  {
 
 
 /* === responsive css === */
-
-@media only screen and (min-width: 850px) {
-    .carousel-caption{
-        top: 150px;
-        bottom: 250px;
-
-    }
-
-    .carousel-caption p{
-        width: 100%;
-    }
-
-    .carousel-item img{
-        height: 100%;
-    }
-
-    .form-contact{
-        grid-template-columns: 1fr;
-    }
-
-
-}
-
-@media only screen and (max-width: 850px) {
-    .navbar-nav{
-        text-align: center;
-        
-    }
-    .carousel-caption{
-        bottom: 300px;
-
-    }
-    .carousel-caption h5{
-        font-size: 3rem;
-
-    }
-    .carousel-caption a{
-        padding: 10px 15px;
-    }
-    
-    .carousel-caption p{
-        width: 100%;
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-
-    .carousel-item img{
-        height: 100%;
-    }
-   
-}
 
 
 /*--/footer--*/
