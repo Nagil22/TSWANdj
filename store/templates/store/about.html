@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSWAN FARMS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'store/css/main.css' %}">
+    <link href="https://www.dafontfree.net/embed/c2lua2luLXNhbnMtOTAwLXgtYmxhY2staXRhbGljLTkwMC14LWJsYWNrLWl0YWxpYyZkYXRhLzEwL3MvNTk0MzEvU2lua2luU2Fucy05MDBYQmxhY2tJdGFsaWMudHRm" 
+    rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+                <div class="container">
+                   
+                    <!-- Logo -->
+                <a class="navbar-brand fs-3 " href="#">
+                   <span class="text warning">Tswan</span> Farms</a>
+                    <!-- Btn -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" 
+                    tabindex="-1" 
+                    id="offcanvasNavbar" 
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <!-- sidebar header -->
+                    <div class="offcanvas-header text-black border-bottom  p-lg-0 ">
+                    <h5 class="offcanvas-title" 
+                    id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" 
+                    class="btn-close btn-close-black" data-bs-dismiss="offcanvas" 
+                    aria-label="Close"></button>
+                    </div>
+                    
+                    <!--Sidebar Body  -->
+                    <div class="offcanvas-body  d-flex flex-column p-4 text-black">
+                    <ul class="navbar-nav justify-content-center align-items-center ms-auto fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+
+                            <a class="nav-link active text-black"  aria-current="page" href="{% url 'store:index' %}">Home</a>
+
+                        </li>
+                        <li class="nav-item mx-2">
+
+                            <a class="nav-link active text-black" href="{% url 'store:about' %}">About</a>
+                        </li>
+
+  
+                        <li class="nav-item mx-2">
+                           
+                            <a class="nav-link active text-black" href="{% url 'store:products' %}">Products</a>
+                            
+                        </li>
+                        <li class="nav-item mx-2">
+                           
+                            <a class="nav-link active text-black" href="{% url 'store:contact' %}">Contact Us</a>
+                            
+                        </li>
+                    
+                    </ul>
+                </div>
+                </div>
+        </nav>
+ 
+    <!-- About breadcrumb-->
+
+        <section class="about-breadcrumb text-left">
+                <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+                  <div class="container py-2">
+                    <h2 class="title">Who We Are...</h2>
+                    <ul class="breadcrumbs-custom-path mt-2">
+                      <li><a href="#url">Home</a></li>
+                      <i class="bi bi-arrow-right mx-2 text-white"> About </i>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+    <!-- about breadcrumbends -->
+
+    <!-- /about-6-->
+            <section class="w3l-cta4 py-5">
+                <div class="container py-lg-5">
+                    <h3 class="hny-title"> Tswan Integrated Farms LTD. </h3>
+                    <div class="row mt-5">
+                    <div class="col-md-6">
+                    <h6 class="sub-title">Our Story</h6>
+
+                    <p class="py-3">
+                     
+                        Welcome to Tswan Farms, where our roots run deep in the fertile soils of Nigeria. 
+                        Founded with a steadfast commitment to excellence in agriculture, we take pride in being a prominent exporter of premium seeds and crops to international markets.
+                    </p>
+                    <p class="py-3">
+                        
+                        With a vision to not only contribute to the global agricultural landscape but also to make a meaningful impact locally.
+                
+                    </p>
+                    <p class="py-3">
+
+                        At Tswan Farms, we embrace sustainable farming practices, ensuring that every seed and crop we cultivate meets the highest standards of quality. 
+                        Beyond our global reach, we are deeply rooted in our community, actively participating in the growth and prosperity of local markets.
+                
+                    </p>
+                    <p class="py-3">
+
+                        Through dedication, innovation, and a passion for agriculture, we aim to nourish nations while fostering sustainable development at home.
+                    
+                    </p>
+            
+                </div>
+
+            
+            <div class="col-md-6 mt-md-0 mt-4">
+                <h6 class="sub-title">Our Next Level</h6>
+                <p class="py-3">
+                    Welcome to Tswan Farms, a leading agricultural company based in Nigeria. With a rich history and a commitment
+                    to excellence, we specialize in exporting high-quality seeds and crops to international markets. 
+                </p>
+                <p class="py-3">
+
+                    Our journey began with a vision to contribute to global agriculture while making a positive impact locally.</p>
+                
+                </p>
+                <p class="py-3">
+                    <a href="{% url 'store:contact' %}" 
+                        class=" btn btn-warning text-dark">Sign up!</a>
+               
+
+                </p>
+                
+            </div>
+      
+         </section>
+    <!-- //about-6-->
+
+ <!-- footer section -->
+
+    <footer>
+        <div class="footer container">
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href=""></a>Home</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Products</li>
+                    <li><a href=""></a>Contact us</li>
+                    <li><a href=""></a>Sign Up</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+            </div>
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Mail:infocontact@tswanfarms.com </p>
+                <p>080-TSWAN-FARMS</p>
+                <p>Gwagwalada, FCT. Abuja.</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+           <p>&copy;2023 TSWAN INTEGRATED FARMS LTD. All rights reserved</p> 
+        </div>
+
+    </footer>
+
+
+   
+
+
+  <script src= "{% static 'store/js/*.js' %}"></script>  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
